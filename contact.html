@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — SkyVoyage</title>
+  <meta name="description" content="Get in touch with SkyVoyage travel experts.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="preloader"><div class="preloader-globe"></div></div>
+  <div id="site-nav"></div>
+
+  <header class="page-hero">
+    <div class="parallax-bg" data-speed="-0.3" style="background-image:url('https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=1920&q=80')"></div>
+    <div class="float-shape s1"></div>
+    <div class="float-shape s2"></div>
+    <div class="float-shape s3"></div>
+    <div class="content" data-depth="-0.6">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
+      <h1>Let's <span class="grad-text">Talk Travel</span></h1>
+      <p>Questions, custom itineraries or just dreaming out loud — our experts are here 24/7.</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container contact-layout">
+      <div>
+        <div class="contact-cards">
+          <div class="contact-card tilt reveal left" data-tilt="10"><div class="icon">📞</div><div><h3>Call us</h3><p>+1 (555) 248-7720<br>Mon–Sun, 24 hours</p></div></div>
+          <div class="contact-card tilt reveal left" data-tilt="10" data-delay="100"><div class="icon">✉️</div><div><h3>Email</h3><p>hello@skyvoyage.travel<br>Reply within 24h</p></div></div>
+          <div class="contact-card tilt reveal left" data-tilt="10" data-delay="200"><div class="icon">📍</div><div><h3>Visit our office</h3><p>221 Ocean Drive<br>Miami, FL 33139</p></div></div>
+        </div>
+
+        <!-- 3D rotating destination cube -->
+        <div class="cube-wrap reveal" aria-hidden="true">
+          <div class="cube">
+            <div class="cube-face" style="background-image:url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=400&q=70')"></div>
+            <div class="cube-face" style="background-image:url('https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=400&q=70')"></div>
+            <div class="cube-face" style="background-image:url('https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&q=70')"></div>
+            <div class="cube-face" style="background-image:url('https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=400&q=70')"></div>
+            <div class="cube-face" style="background-image:url('https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=400&q=70')"></div>
+            <div class="cube-face" style="background-image:url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=400&q=70')"></div>
+          </div>
+        </div>
+      </div>
+
+      <form class="panel reveal right" id="contactForm">
+        <h2>Send us a message</h2>
+        <p>Tell us about your dream trip and we'll craft a free itinerary.</p>
+        <div class="form-grid">
+          <div class="field"><label for="cname">Full name</label><input type="text" id="cname" name="name" placeholder="Jane Doe" required><span class="err"></span></div>
+          <div class="field"><label for="cemail">Email</label><input type="email" id="cemail" name="email" placeholder="jane@example.com" required><span class="err"></span></div>
+          <div class="field"><label for="cphone">Phone (optional)</label><input type="tel" id="cphone" name="phone" placeholder="+1 555 123 4567"><span class="err"></span></div>
+          <div class="field"><label for="csubject">Subject</label>
+            <select id="csubject" name="subject" required>
+              <option value="">Choose a topic…</option>
+              <option>Custom tour request</option>
+              <option>Hotel booking</option>
+              <option>Group / corporate travel</option>
+              <option>Honeymoon planning</option>
+              <option>Other</option>
+            </select><span class="err"></span>
+          </div>
+          <div class="field full"><label for="cmsg">Message</label><textarea id="cmsg" name="message" rows="6" minlength="10" placeholder="Where do you want to go, when, and with whom?" required></textarea><span class="err"></span></div>
+          <div class="full"><button class="btn btn-primary btn-block" type="submit">Send Message ✈</button></div>
+        </div>
+      </form>
+    </div>
+
+    <div class="container">
+      <div class="map-wrap reveal">
+        <iframe title="SkyVoyage office location" loading="lazy"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-80.1420%2C25.7700%2C-80.1250%2C25.7850&amp;layer=mapnik&amp;marker=25.7775%2C-80.1335"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" style="padding-top:20px">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">FAQ</span>
+        <h2>Frequently asked <span class="grad-text">questions</span></h2>
+      </div>
+      <div class="faq">
+        <div class="faq-item reveal"><button class="faq-q" aria-expanded="false">Can I customise a tour package?<span class="plus">+</span></button><div class="faq-a"><p>Absolutely. Every tour can be adjusted — extra nights, hotel upgrades, private guides or entirely new stops. Just send us a message.</p></div></div>
+        <div class="faq-item reveal"><button class="faq-q" aria-expanded="false">What is your cancellation policy?<span class="plus">+</span></button><div class="faq-a"><p>Hotel bookings are free to cancel up to 48 hours before check-in. Tours can be cancelled for a full refund up to 30 days before departure.</p></div></div>
+        <div class="faq-item reveal"><button class="faq-q" aria-expanded="false">Do you help with visas and insurance?<span class="plus">+</span></button><div class="faq-a"><p>Yes — our team guides you through visa requirements and every trip includes comprehensive travel insurance.</p></div></div>
+        <div class="faq-item reveal"><button class="faq-q" aria-expanded="false">Which payment methods do you accept?<span class="plus">+</span></button><div class="faq-a"><p>All major credit cards, bank transfer and flexible monthly instalment plans for trips over $1,000.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>

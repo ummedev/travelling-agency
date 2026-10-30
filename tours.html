@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tours — SkyVoyage</title>
+  <meta name="description" content="Explore SkyVoyage's handpicked tour packages: beaches, adventures, culture and luxury escapes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="preloader"><div class="preloader-globe"></div></div>
+  <div id="site-nav"></div>
+
+  <header class="page-hero">
+    <div class="parallax-bg" data-speed="-0.3" style="background-image:url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1920&q=80')"></div>
+    <div class="float-shape s1"></div>
+    <div class="float-shape s2"></div>
+    <div class="float-shape s3"></div>
+    <div class="content" data-depth="-0.6">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Tours</div>
+      <h1>Our <span class="grad-text">Tours</span></h1>
+      <p>Curated journeys for every kind of traveller. Hover a card (or tap on mobile) to flip it and see what's included.</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="filters reveal">
+        <button class="filter-btn active" data-filter="all">All Tours</button>
+        <button class="filter-btn" data-filter="beach">🏖 Beach</button>
+        <button class="filter-btn" data-filter="adventure">🏔 Adventure</button>
+        <button class="filter-btn" data-filter="culture">🏛 Culture</button>
+        <button class="filter-btn" data-filter="luxury">💎 Luxury</button>
+      </div>
+
+      <div class="tour-grid">
+        <!-- Tour 1 -->
+        <div class="tour-card reveal" data-cat="beach luxury">
+          <div class="flip">
+            <div class="face front">
+              <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=800&q=80" alt="Santorini" loading="lazy">
+              <span class="badge">⭐ 4.9 · Bestseller</span>
+              <div class="info"><h3>Santorini Sunsets</h3><div class="meta"><span>📍 Greece</span><span>⏱ 7 days</span><span>👥 12 max</span></div></div>
+            </div>
+            <div class="face back">
+              <h3>Santorini Sunsets</h3>
+              <p>Cliffside villas, volcanic beaches and the world's most famous sunset in Oia.</p>
+              <ul><li>6 nights cave-suite stay</li><li>Catamaran cruise & BBQ</li><li>Wine tasting in Pyrgos</li><li>Airport transfers</li></ul>
+              <div class="bottom"><div class="price">$1,290 <small>/ person</small></div><a class="btn btn-primary" href="booking.html?destination=santorini">Book</a></div>
+            </div>
+          </div>
+        </div>
+        <!-- Tour 2 -->
+        <div class="tour-card reveal" data-cat="adventure" data-delay="100">
+          <div class="flip">
+            <div class="face front">
+              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80" alt="Swiss Alps" loading="lazy">
+              <span class="badge">🏔 Adventure</span>
+              <div class="info"><h3>Swiss Alps Trek</h3><div class="meta"><span>📍 Switzerland</span><span>⏱ 8 days</span><span>👥 10 max</span></div></div>
+            </div>
+            <div class="face back">
+              <h3>Swiss Alps Trek</h3>
+              <p>Hike glacier trails beneath the Matterhorn and sleep in cosy mountain lodges.</p>
+              <ul><li>Certified mountain guide</li><li>Glacier Express train ride</li><li>Paragliding in Interlaken</li><li>All meals on trail</li></ul>
+              <div class="bottom"><div class="price">$2,150 <small>/ person</small></div><a class="btn btn-primary" href="booking.html?destination=paris">Book</a></div>
+            </div>
+          </div>
+        </div>
+        <!-- Tour 3 -->
+        <div class="tour-card reveal" data-cat="culture" data-delay="200">
+          <div class="flip">
+            <div class="face front">
+              <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=800&q=80" alt="Tokyo" loading="lazy">
+              <span class="badge">🌸 Culture</span>
+              <div class="info"><h3>Japan Discovery</h3><div class="meta"><span>📍 Japan</span><span>⏱ 9 days</span><span>👥 14 max</span></div></div>
+            </div>
+            <div class="face back">
+              <h3>Japan Discovery</h3>
+              <p>Neon Tokyo, ancient Kyoto and the deer of Nara — Japan's best in one trip.</p>
+              <ul><li>7-day JR rail pass</li><li>Tea ceremony in Kyoto</li><li>Mt. Fuji day trip</li><li>Sushi-making class</li></ul>
+              <div class="bottom"><div class="price">$1,890 <small>/ person</small></div><a class="btn btn-primary" href="booking.html?destination=tokyo">Book</a></div>
+            </div>
+          </div>
+        </div>
+        <!-- Tour 4 -->
+        <div class="tour-card reveal" data-cat="beach luxury">
+          <div class="flip">
+            <div class="face front">
+              <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=800&q=80" alt="Maldives" loading="lazy">
+              <span class="badge">💎 Luxury</span>
+              <div class="info"><h3>Maldives Escape</h3><div class="meta"><span>📍 Maldives</span><span>⏱ 6 days</span><span>👥 Couples</span></div></div>
+            </div>
+            <div class="face back">
+              <h3>Maldives Escape</h3>
+              <p>Overwater villas, turquoise lagoons and private dinners on the sand.</p>
+              <ul><li>Overwater villa w/ pool</li><li>Seaplane transfers</li><li>Snorkelling with mantas</li><li>All-inclusive dining</li></ul>
+              <div class="bottom"><div class="price">$2,450 <small>/ person</small></div><a class="btn btn-primary" href="booking.html?destination=maldives">Book</a></div>
+            </div>
+          </div>
+        </div>
+        <!-- Tour 5 -->
+        <div class="tour-card reveal" data-cat="culture adventure" data-delay="100">
+          <div class="flip">
+            <div class="face front">
+              <img src="https://images.unsplash.com/photo-1539650116574-8efeb43e2750?auto=format&fit=crop&w=800&q=80" alt="Pyramids of Giza" loading="lazy">
+              <span class="badge">🏛 History</span>
+              <div class="info"><h3>Egypt & The Nile</h3><div class="meta"><span>📍 Egypt</span><span>⏱ 10 days</span><span>👥 16 max</span></div></div>
+            </div>
+            <div class="face back">
+              <h3>Egypt & The Nile</h3>
+              <p>Stand before the Pyramids and cruise the Nile from Luxor to Aswan.</p>
+              <ul><li>Egyptologist guide</li><li>4-night Nile cruise</li><li>Abu Simbel excursion</li><li>Hot-air balloon at dawn</li></ul>
+              <div class="bottom"><div class="price">$1,550 <small>/ person</small></div><a class="btn btn-primary" href="booking.html?destination=dubai">Book</a></div>
+            </div>
+          </div>
+        </div>
+        <!-- Tour 6 -->
+        <div class="tour-card reveal" data-cat="beach adventure" data-delay="200">
+          <div class="flip">
+            <div class="face front">
+              <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80" alt="Bali" loading="lazy">
+              <span class="badge">🌴 Tropical</span>
+              <div class="info"><h3>Bali Bliss</h3><div class="meta"><span>📍 Indonesia</span><span>⏱ 8 days</span><span>👥 12 max</span></div></div>
+            </div>
+            <div class="face back">
+              <h3>Bali Bliss</h3>
+              <p>Rice terraces, sacred temples, surf breaks and spa days in Ubud.</p>
+              <ul><li>Private pool villa</li><li>Mount Batur sunrise hike</li><li>Balinese cooking class</li><li>Daily yoga sessions</li></ul>
+              <div class="bottom"><div class="price">$1,140 <small>/ person</small></div><a class="btn btn-primary" href="booking.html?destination=bali">Book</a></div>
+            </div>
+          </div>
+        </div>
+        <!-- Tour 7 -->
+        <div class="tour-card reveal" data-cat="culture luxury">
+          <div class="flip">
+            <div class="face front">
+              <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80" alt="Paris" loading="lazy">
+              <span class="badge">💕 Romantic</span>
+              <div class="info"><h3>Paris in Style</h3><div class="meta"><span>📍 France</span><span>⏱ 5 days</span><span>👥 Couples</span></div></div>
+            </div>
+            <div class="face back">
+              <h3>Paris in Style</h3>
+              <p>Champagne at the Eiffel Tower, the Louvre after hours and Seine dinner cruises.</p>
+              <ul><li>5★ hotel near Champs-Élysées</li><li>Skip-the-line Louvre tour</li><li>Seine dinner cruise</li><li>Day trip to Versailles</li></ul>
+              <div class="bottom"><div class="price">$1,690 <small>/ person</small></div><a class="btn btn-primary" href="booking.html?destination=paris">Book</a></div>
+            </div>
+          </div>
+        </div>
+        <!-- Tour 8 -->
+        <div class="tour-card reveal" data-cat="adventure" data-delay="100">
+          <div class="flip">
+            <div class="face front">
+              <img src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=800&q=80" alt="Northern lights in Iceland" loading="lazy">
+              <span class="badge">❄ Seasonal</span>
+              <div class="info"><h3>Iceland Aurora</h3><div class="meta"><span>📍 Iceland</span><span>⏱ 6 days</span><span>👥 10 max</span></div></div>
+            </div>
+            <div class="face back">
+              <h3>Iceland Aurora</h3>
+              <p>Hunt the Northern Lights, explore ice caves and soak in geothermal lagoons.</p>
+              <ul><li>Glass igloo night</li><li>Ice cave exploration</li><li>Blue Lagoon entry</li><li>Golden Circle 4x4 tour</li></ul>
+              <div class="bottom"><div class="price">$2,290 <small>/ person</small></div><a class="btn btn-primary" href="booking.html?destination=paris">Book</a></div>
+            </div>
+          </div>
+        </div>
+        <!-- Tour 9 -->
+        <div class="tour-card reveal" data-cat="luxury culture" data-delay="200">
+          <div class="flip">
+            <div class="face front">
+              <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80" alt="Dubai skyline" loading="lazy">
+              <span class="badge">🌆 City</span>
+              <div class="info"><h3>Dubai Skyline</h3><div class="meta"><span>📍 UAE</span><span>⏱ 5 days</span><span>👥 Any</span></div></div>
+            </div>
+            <div class="face back">
+              <h3>Dubai Skyline</h3>
+              <p>Sky-high luxury, golden dunes and the glitter of the world's tallest tower.</p>
+              <ul><li>Burj Khalifa At The Top</li><li>Desert safari & dinner</li><li>Dhow cruise in the Marina</li><li>Gold souk walking tour</li></ul>
+              <div class="bottom"><div class="price">$1,350 <small>/ person</small></div><a class="btn btn-primary" href="booking.html?destination=dubai">Book</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Parallax strip -->
+  <section class="parallax-banner">
+    <div class="parallax-bg" data-speed="-0.35" style="background-image:url('https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=1920&q=80')"></div>
+    <div class="content reveal">
+      <span class="eyebrow">Tailor-made</span>
+      <h2>Can't find your <span class="grad-text">dream trip?</span></h2>
+      <p>Tell us where you want to go and our specialists will design a private itinerary just for you.</p>
+      <a href="contact.html" class="btn btn-primary">Design My Tour</a>
+    </div>
+  </section>
+
+  <!-- Sample itinerary timeline -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Sample Itinerary</span>
+        <h2>Japan Discovery — <span class="grad-text">day by day</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="t-item reveal left"><span class="day">Day 1–2</span><h3>Arrive in Tokyo</h3><p>Shibuya Crossing, Senso-ji Temple and a welcome izakaya dinner.</p></div>
+        <div class="t-item reveal right"><span class="day">Day 3</span><h3>Mt. Fuji & Hakone</h3><p>Lake Ashi cruise, ropeway views of Fuji and a night in a hot-spring ryokan.</p></div>
+        <div class="t-item reveal left"><span class="day">Day 4–6</span><h3>Kyoto</h3><p>Fushimi Inari's red gates, Arashiyama bamboo grove and a geisha district walk.</p></div>
+        <div class="t-item reveal right"><span class="day">Day 7</span><h3>Nara</h3><p>Meet the friendly deer and the giant bronze Buddha of Todai-ji.</p></div>
+        <div class="t-item reveal left"><span class="day">Day 8–9</span><h3>Osaka & Farewell</h3><p>Street-food heaven in Dotonbori, then a farewell kaiseki feast.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>

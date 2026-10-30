@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking & Hotels — SkyVoyage</title>
+  <meta name="description" content="Book handpicked luxury hotels and resorts with SkyVoyage.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="preloader"><div class="preloader-globe"></div></div>
+  <div id="site-nav"></div>
+
+  <header class="page-hero">
+    <div class="parallax-bg" data-speed="-0.3" style="background-image:url('https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1920&q=80')"></div>
+    <div class="float-shape s1"></div>
+    <div class="float-shape s2"></div>
+    <div class="float-shape s3"></div>
+    <div class="content" data-depth="-0.6">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Booking & Hotels</div>
+      <h1>Book Your <span class="grad-text">Stay</span></h1>
+      <p>Handpicked hotels and resorts, best-price guaranteed. Reserve in under a minute.</p>
+    </div>
+  </header>
+
+  <!-- ============ Hotels ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Featured Hotels</span>
+        <h2>Stay somewhere <span class="grad-text">extraordinary</span></h2>
+        <p>Click “Book now” on any hotel to load it into the booking form below.</p>
+      </div>
+      <div class="hotel-grid">
+        <article class="hotel-card tilt reveal" data-tilt="8">
+          <div class="img"><img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80" alt="Le Grand Lumière hotel" loading="lazy"><span class="badge">📍 Paris</span></div>
+          <div class="body">
+            <div class="top"><div><h3>Le Grand Lumière</h3><div class="loc">8th Arrondissement, Paris</div></div><span class="rating">★ 4.8</span></div>
+            <div class="amenities"><span>Eiffel view</span><span>Spa</span><span>Michelin dining</span><span>Free Wi-Fi</span></div>
+            <div class="bottom"><div class="price">$320 <small>/ night</small></div><button class="btn btn-primary" data-book="lumiere">Book now</button></div>
+          </div>
+        </article>
+        <article class="hotel-card tilt reveal" data-tilt="8" data-delay="100">
+          <div class="img"><img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80" alt="Caldera Blue Suites" loading="lazy"><span class="badge">📍 Santorini</span></div>
+          <div class="body">
+            <div class="top"><div><h3>Caldera Blue Suites</h3><div class="loc">Oia, Santorini</div></div><span class="rating">★ 4.9</span></div>
+            <div class="amenities"><span>Infinity pool</span><span>Sunset terrace</span><span>Breakfast</span></div>
+            <div class="bottom"><div class="price">$410 <small>/ night</small></div><button class="btn btn-primary" data-book="caldera">Book now</button></div>
+          </div>
+        </article>
+        <article class="hotel-card tilt reveal" data-tilt="8" data-delay="200">
+          <div class="img"><img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80" alt="Ubud Jungle Retreat" loading="lazy"><span class="badge">📍 Bali</span></div>
+          <div class="body">
+            <div class="top"><div><h3>Ubud Jungle Retreat</h3><div class="loc">Ubud, Bali</div></div><span class="rating">★ 4.7</span></div>
+            <div class="amenities"><span>Private pool</span><span>Yoga deck</span><span>Spa</span><span>Airport pickup</span></div>
+            <div class="bottom"><div class="price">$190 <small>/ night</small></div><button class="btn btn-primary" data-book="ubud">Book now</button></div>
+          </div>
+        </article>
+        <article class="hotel-card tilt reveal" data-tilt="8">
+          <div class="img"><img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=800&q=80" alt="Coral Lagoon Villas" loading="lazy"><span class="badge">📍 Maldives</span></div>
+          <div class="body">
+            <div class="top"><div><h3>Coral Lagoon Villas</h3><div class="loc">North Malé Atoll</div></div><span class="rating">★ 5.0</span></div>
+            <div class="amenities"><span>Overwater villa</span><span>All-inclusive</span><span>Diving centre</span></div>
+            <div class="bottom"><div class="price">$680 <small>/ night</small></div><button class="btn btn-primary" data-book="coral">Book now</button></div>
+          </div>
+        </article>
+        <article class="hotel-card tilt reveal" data-tilt="8" data-delay="100">
+          <div class="img"><img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80" alt="Desert Pearl Tower" loading="lazy"><span class="badge">📍 Dubai</span></div>
+          <div class="body">
+            <div class="top"><div><h3>Desert Pearl Tower</h3><div class="loc">Downtown Dubai</div></div><span class="rating">★ 4.8</span></div>
+            <div class="amenities"><span>Rooftop pool</span><span>Burj view</span><span>Butler service</span></div>
+            <div class="bottom"><div class="price">$360 <small>/ night</small></div><button class="btn btn-primary" data-book="pearl">Book now</button></div>
+          </div>
+        </article>
+        <article class="hotel-card tilt reveal" data-tilt="8" data-delay="200">
+          <div class="img"><img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Sakura Garden Hotel" loading="lazy"><span class="badge">📍 Tokyo</span></div>
+          <div class="body">
+            <div class="top"><div><h3>Sakura Garden Hotel</h3><div class="loc">Shinjuku, Tokyo</div></div><span class="rating">★ 4.6</span></div>
+            <div class="amenities"><span>Onsen</span><span>City view</span><span>Japanese breakfast</span></div>
+            <div class="bottom"><div class="price">$240 <small>/ night</small></div><button class="btn btn-primary" data-book="sakura">Book now</button></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Booking form ============ -->
+  <section class="section" id="booking" style="padding-top:20px">
+    <div class="container booking-layout">
+      <form class="panel reveal left" id="bookingForm">
+        <h2>Reservation Details</h2>
+        <p>Fill in your details — the price updates live on the right.</p>
+        <div class="form-grid">
+          <div class="field full">
+            <label for="hotel">Hotel</label>
+            <select id="hotel" name="hotel" required>
+              <option value="lumiere" data-dest="paris" data-price="320" data-img="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80">Le Grand Lumière — Paris</option>
+              <option value="caldera" data-dest="santorini" data-price="410" data-img="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80">Caldera Blue Suites — Santorini</option>
+              <option value="ubud" data-dest="bali" data-price="190" data-img="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80">Ubud Jungle Retreat — Bali</option>
+              <option value="coral" data-dest="maldives" data-price="680" data-img="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=800&q=80">Coral Lagoon Villas — Maldives</option>
+              <option value="pearl" data-dest="dubai" data-price="360" data-img="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80">Desert Pearl Tower — Dubai</option>
+              <option value="sakura" data-dest="tokyo" data-price="240" data-img="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80">Sakura Garden Hotel — Tokyo</option>
+            </select>
+            <span class="err"></span>
+          </div>
+          <div class="field"><label for="checkin">Check-in</label><input type="date" id="checkin" name="checkin" required><span class="err"></span></div>
+          <div class="field"><label for="checkout">Check-out</label><input type="date" id="checkout" name="checkout" required><span class="err"></span></div>
+          <div class="field"><label for="guests">Guests</label>
+            <select id="guests" name="guests"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select><span class="err"></span>
+          </div>
+          <div class="field"><label for="phone">Phone</label><input type="tel" id="phone" name="phone" placeholder="+1 555 123 4567" required><span class="err"></span></div>
+          <div class="field"><label for="fname">Full name</label><input type="text" id="fname" name="name" placeholder="Jane Doe" required><span class="err"></span></div>
+          <div class="field"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="jane@example.com" required><span class="err"></span></div>
+          <div class="full">
+            <div class="field"><label>Room type</label></div>
+            <div class="room-types" style="margin-top:6px">
+              <div class="room-type"><input type="radio" name="room" id="rStd" value="standard" checked><label for="rStd"><span>🛏</span>Standard<br><small>base price</small></label></div>
+              <div class="room-type"><input type="radio" name="room" id="rDlx" value="deluxe"><label for="rDlx"><span>🌅</span>Deluxe<br><small>+40%</small></label></div>
+              <div class="room-type"><input type="radio" name="room" id="rSte" value="suite"><label for="rSte"><span>👑</span>Suite<br><small>+100%</small></label></div>
+            </div>
+          </div>
+          <div class="field full"><label for="notes">Special requests (optional)</label><textarea id="notes" name="notes" rows="3" placeholder="Anniversary, dietary needs, late check-in…"></textarea></div>
+        </div>
+      </form>
+
+      <aside class="panel summary reveal right">
+        <div class="summary-img"><img id="sumImg" src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80" alt="Selected hotel"></div>
+        <h2 id="sumHotel" style="font-size:1.5rem">Le Grand Lumière</h2>
+        <div style="margin-top:14px">
+          <div class="summary-row"><span>Stay</span><strong id="sumNights">Select dates</strong></div>
+          <div class="summary-row"><span>Room</span><strong id="sumRoom">Standard × 1</strong></div>
+          <div class="summary-row"><span>Guests</span><strong id="sumGuests">2</strong></div>
+          <div class="summary-row"><span>Taxes & fees (12%)</span><strong id="sumTaxes">$0</strong></div>
+        </div>
+        <div class="summary-total"><span>Total</span><strong id="sumTotal">$0</strong></div>
+        <button class="btn btn-primary btn-block" type="submit" form="bookingForm">Confirm Booking ✈</button>
+        <p style="color:var(--muted);font-size:0.82rem;text-align:center;margin-top:12px">Free cancellation up to 48h before check-in. 1 room per 2 guests.</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Parallax strip -->
+  <section class="parallax-banner" style="height:55vh">
+    <div class="parallax-bg" data-speed="-0.35" style="background-image:url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1920&q=80')"></div>
+    <div class="content reveal">
+      <span class="eyebrow">Members Club</span>
+      <h2>Free upgrades on <span class="grad-text">every stay</span></h2>
+      <p>Join SkyVoyage Club for room upgrades, late checkout and exclusive member rates.</p>
+    </div>
+  </section>
+
+  <!-- Confirmation modal -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <div class="check">✓</div>
+      <h3 id="modalTitle">Booking Confirmed!</h3>
+      <p id="modalText"></p>
+      <button class="btn btn-primary" data-close>Wonderful</button>
+    </div>
+  </div>
+
+  <div id="site-footer"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>

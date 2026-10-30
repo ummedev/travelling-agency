@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkyVoyage — Travel Agency</title>
+  <meta name="description" content="SkyVoyage travel agency: handpicked tours, luxury hotels and unforgettable journeys around the world.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="preloader"><div class="preloader-globe"></div></div>
+  <div id="site-nav"></div>
+
+  <!-- ============ HERO: places with parallax ============ -->
+  <header class="hero">
+    <div class="hero-scenes layer" data-depth="0.4">
+      <div class="scene" data-name="Paris, France" style="background-image:url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1920&q=80')"></div>
+      <div class="scene" data-name="Santorini, Greece" style="background-image:url('https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=1920&q=80')"></div>
+      <div class="scene" data-name="Bali, Indonesia" style="background-image:url('https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1920&q=80')"></div>
+      <div class="scene" data-name="Swiss Alps" style="background-image:url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1920&q=80')"></div>
+      <div class="scene" data-name="Dubai, UAE" style="background-image:url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1920&q=80')"></div>
+      <div class="scene" data-name="Tokyo, Japan" style="background-image:url('https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1920&q=80')"></div>
+    </div>
+
+    <div class="cloud c1"></div>
+    <div class="cloud c2"></div>
+    <div class="cloud c3"></div>
+    <div class="cloud c4"></div>
+
+    <div class="plane" aria-hidden="true">
+      <span class="plane-trail"></span>
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 16v-2l-8-5V3.5A1.5 1.5 0 0 0 11.5 2 1.5 1.5 0 0 0 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z" transform="rotate(90 12 12)"/></svg>
+    </div>
+
+    <div class="mountains m-back layer" data-depth="0.8" data-scroll="0.15" aria-hidden="true">
+      <svg viewBox="0 0 1440 320" preserveAspectRatio="none"><path fill="#0f2338" d="M0 260 L120 170 L220 220 L340 110 L470 210 L600 140 L720 230 L860 100 L980 200 L1100 130 L1240 220 L1360 150 L1440 190 V320 H0Z"/></svg>
+    </div>
+    <div class="mountains m-mid layer" data-depth="1.4" data-scroll="0.08" aria-hidden="true">
+      <svg viewBox="0 0 1440 320" preserveAspectRatio="none"><path fill="#0b1a2c" d="M0 280 L90 220 L200 260 L320 180 L430 250 L560 200 L690 270 L800 190 L930 250 L1060 170 L1190 250 L1310 210 L1440 260 V320 H0Z"/></svg>
+    </div>
+    <div class="mountains m-front layer" data-depth="2.2" data-scroll="0" aria-hidden="true">
+      <svg viewBox="0 0 1440 320" preserveAspectRatio="none"><path fill="#07111f" d="M0 300 C160 250 260 290 400 270 C560 245 640 300 800 280 C960 258 1080 300 1220 275 C1320 258 1390 285 1440 280 V320 H0Z"/></svg>
+    </div>
+
+    <div class="hero-content layer" data-depth="-0.5">
+      <div class="hero-location"><span class="dot"></span>Now exploring: <strong class="scene-name" id="sceneName">Paris, France</strong></div>
+      <h1 class="hero-title"><span class="word">Discover</span> <span class="word grad-text">The World</span></h1>
+      <p class="hero-sub">Handcrafted journeys to the planet's most breathtaking places — from Parisian rooftops to Bali's emerald rice terraces.</p>
+      <div class="hero-ctas">
+        <a href="tours.html" class="btn btn-primary">Explore Tours →</a>
+        <a href="booking.html" class="btn btn-ghost">Book a Hotel</a>
+      </div>
+    </div>
+
+    <div class="scene-dots"></div>
+    <div class="scroll-hint">Scroll</div>
+  </header>
+
+  <!-- ============ Quick search ============ -->
+  <div class="container">
+    <form class="search-bar reveal" id="quickSearch">
+      <div class="field">
+        <label for="qDest">Destination</label>
+        <select id="qDest" name="destination">
+          <option value="paris">Paris, France</option>
+          <option value="santorini">Santorini, Greece</option>
+          <option value="bali">Bali, Indonesia</option>
+          <option value="maldives">Maldives</option>
+          <option value="dubai">Dubai, UAE</option>
+          <option value="tokyo">Tokyo, Japan</option>
+        </select>
+      </div>
+      <div class="field"><label for="qIn">Check-in</label><input type="date" id="qIn" name="checkin"></div>
+      <div class="field"><label for="qOut">Check-out</label><input type="date" id="qOut" name="checkout"></div>
+      <div class="field">
+        <label for="qGuests">Guests</label>
+        <select id="qGuests" name="guests"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select>
+      </div>
+      <button class="btn btn-primary" type="submit">Search ⌕</button>
+    </form>
+  </div>
+
+  <!-- ============ Destinations ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Top Destinations</span>
+        <h2>Where will you <span class="grad-text">wander</span> next?</h2>
+        <p>Move your cursor over a card to see it come alive in 3D.</p>
+      </div>
+      <div class="dest-grid">
+        <a href="tours.html" class="dest-card tilt reveal" data-delay="0">
+          <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=800&q=80" alt="White houses of Santorini over the sea" loading="lazy">
+          <span class="badge">🔥 Trending</span>
+          <div class="info"><h3>Santorini</h3><div class="meta"><span>Greece · 7 days</span><span class="price">from $1,290</span></div></div>
+        </a>
+        <a href="tours.html" class="dest-card tilt reveal" data-delay="120">
+          <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=800&q=80" alt="Overwater villas in the Maldives" loading="lazy">
+          <span class="badge">🏝 Luxury</span>
+          <div class="info"><h3>Maldives</h3><div class="meta"><span>Indian Ocean · 6 days</span><span class="price">from $2,450</span></div></div>
+        </a>
+        <a href="tours.html" class="dest-card tilt reveal" data-delay="240">
+          <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=800&q=80" alt="Tokyo city skyline at dusk" loading="lazy">
+          <span class="badge">🌸 Culture</span>
+          <div class="info"><h3>Tokyo</h3><div class="meta"><span>Japan · 9 days</span><span class="price">from $1,890</span></div></div>
+        </a>
+        <a href="tours.html" class="dest-card tilt reveal" data-delay="360">
+          <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=800&q=80" alt="Gondolas on a Venice canal" loading="lazy">
+          <span class="badge">💕 Romantic</span>
+          <div class="info"><h3>Venice</h3><div class="meta"><span>Italy · 5 days</span><span class="price">from $990</span></div></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3D Globe ============ -->
+  <section class="section" style="padding-top:40px">
+    <div class="container globe-section">
+      <div id="globe" class="reveal left" aria-label="Interactive 3D globe showing SkyVoyage flight routes"></div>
+      <div class="globe-text reveal right">
+        <span class="eyebrow">Global Network</span>
+        <h2>We fly you <span class="grad-text">everywhere</span></h2>
+        <p>Drag the globe to spin it. Every glowing pin is a destination we know inside out, and every arc is a route our travellers fly every week.</p>
+        <div class="stats">
+          <div class="stat"><strong data-count="120" data-suffix="+">0</strong><span>Destinations</span></div>
+          <div class="stat"><strong data-count="48000" data-suffix="+">0</strong><span>Happy travellers</span></div>
+          <div class="stat"><strong data-count="850" data-suffix="">0</strong><span>Partner hotels</span></div>
+          <div class="stat"><strong data-count="18" data-suffix=" yrs">0</strong><span>Experience</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Parallax banner ============ -->
+  <section class="parallax-banner">
+    <div class="parallax-bg" data-speed="-0.35" style="background-image:url('https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=1920&q=80')"></div>
+    <div class="content reveal">
+      <span class="eyebrow">Limited Season</span>
+      <h2>Chase the <span class="grad-text">Northern Lights</span></h2>
+      <p>Glass igloos, frozen waterfalls and skies on fire. Our Iceland Aurora expedition departs this winter.</p>
+      <a href="tours.html" class="btn btn-primary">View Expedition</a>
+    </div>
+  </section>
+
+  <!-- ============ Why us ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Why SkyVoyage</span>
+        <h2>Travel made <span class="grad-text">effortless</span></h2>
+      </div>
+      <div class="features">
+        <div class="feature tilt reveal" data-delay="0"><div class="icon">🧭</div><h3>Expert Guides</h3><p>Local storytellers who reveal hidden gems you'll never find in a guidebook.</p></div>
+        <div class="feature tilt reveal" data-delay="120"><div class="icon">🛡️</div><h3>Safe & Insured</h3><p>Full travel insurance and 24/7 emergency support on every single trip.</p></div>
+        <div class="feature tilt reveal" data-delay="240"><div class="icon">💎</div><h3>Best Price</h3><p>We match any lower price you find — plus exclusive member-only upgrades.</p></div>
+        <div class="feature tilt reveal" data-delay="360"><div class="icon">🌱</div><h3>Eco Friendly</h3><p>Carbon-offset flights and partnerships with sustainable local stays.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Testimonials ============ -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Testimonials</span>
+        <h2>Stories from the <span class="grad-text">road</span></h2>
+      </div>
+      <div class="testimonials">
+        <div class="testimonial reveal" data-delay="0"><div class="stars">★★★★★</div><p>"Our Bali honeymoon was pure magic. Every detail was handled — we just had to show up and fall in love with the island."</p><div class="person"><div class="avatar">AK</div><div><strong>Aisha & Karim</strong><small>Bali, Indonesia</small></div></div></div>
+        <div class="testimonial reveal" data-delay="120"><div class="stars">★★★★★</div><p>"The Japan tour was perfectly paced. Kyoto temples at sunrise, ramen crawls in Tokyo — the best two weeks of my life."</p><div class="person"><div class="avatar">DM</div><div><strong>Daniel M.</strong><small>Tokyo, Japan</small></div></div></div>
+        <div class="testimonial reveal" data-delay="240"><div class="stars">★★★★★</div><p>"Booking the Maldives villa took five minutes. The upgrade they arranged for our anniversary left us speechless."</p><div class="person"><div class="avatar">SR</div><div><strong>Sofia R.</strong><small>Maldives</small></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="cta-box reveal">
+        <span class="eyebrow">Ready for takeoff?</span>
+        <h2>Your next adventure starts <span class="grad-text">today</span></h2>
+        <p>Talk to a travel expert and get a free personalised itinerary within 24 hours.</p>
+        <div class="hero-ctas"><a href="contact.html" class="btn btn-primary">Plan My Trip</a><a href="booking.html" class="btn btn-ghost">Browse Hotels</a></div>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/globe.js"></script>
+</body>
+</html>
